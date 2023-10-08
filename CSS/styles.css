@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+}
+
+.naveg{
+    width: 18%;
+    height: 100vh;
+    background-color: #3DB2FF;
+    border: 1px solid white;
+    border-radius: 20px 0px 0px 20px;
+}
+
+nav p{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    transition: all 0.2s ease-in-out;
+    border-radius: 20px 20px 20px 20px;
+   
+}
+
+nav p:hover{
+    box-shadow: 0 0 15px rgb(2, 238, 255), inset 0 0 15px rgb(0, 238, 255);
+    text-shadow: 0 0 15px rgb(0, 60, 65);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.nome{
+    height: 100vh;
+    width: 100%;
+    background-color: #FFEDDA; 
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.nome2{
+    text-align: left;
+    font-size: 150px;
+    padding-top: 200px;
+    margin-left: 100px;
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+
+.nome3{
+    text-align: left;
+    font-size: 30px;
+    margin-top: -20px;
+    margin-left: 100px;
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+
+.nome4{
+    text-align: left;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 100px;
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+
+#foto_redonda{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.foto{
+    text-align: center;
+    padding-top: 200px;
+    
+}
+
+.icones{
+    height: 75px;
+    width: 75px;
+    margin-top: 50px;
+    margin-left: 100px;
+
+}
+
+span {
+    color: #FF2442;
+}
+
+.conhecimento {
+    text-align: left;
+    font-size: 30px;
+    padding-top: 200px;
+    margin-left: 100px;
+    font-family: 'Bebas Neue', sans-serif;
+    
+}
+
+ol {
+    list-style-type: upper-alpha;
+}
+
+.objetivos {
+    text-align: left;
+    font-size: 30px;
+    padding-top: 200px;
+    margin-left: 100px;
+    font-family: 'Bebas Neue', sans-serif;
+    word-wrap: break-word;
+}
+
+h1 {
+    color: #FF2442;
+    margin-top: 30px;
+}
+
+
+
+
+/* conteúdo desnecessário hehe */
+.caixa {
+    justify-content: center;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 220px;
+    margin-left: 15%;
+    
+
+}
+
+.caixa::before {
+    content: '';
+    position: absolute;
+    inset: -20px;
+    background: linear-gradient(315deg, #3DB2FF, #FF2442);
+    transition: 0.5s;
+    animation: animar 4s linear infinite;
+}
+
+.caixa:hover::before {
+    inset: -20px 0px; 
+}
+
+.caixa::after {
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background: transparent;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+@keyframes animar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.content {
+    position: absolute;
+    inset: 20px;
+    border: 4px solid black;
+    z-index: 3;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 3;
+
+}
+
+.caixa:hover .content img {
+
+    opacity: 0;
+}
+
+.content h2 {
+    position: relative;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.content h2 span {
+    font-weight: 300;
+    font-size: 0.75em;
+
+}
+
+.content a {
+    position: relative;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #f8f8f8;
+    color: #070a1c;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.content a:hover {
+
+    letter-spacing: 0.2em;
+}
